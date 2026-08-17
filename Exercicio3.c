@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
 	bit2 = resultado%2;
 	resultado = resultado/2;
 	
-	printf("O número %d em binário = %d%d%d%d%d%d ", n, resultado%2, bit2, bit4, bit8, bit16, bit32, bit64 );
+	printf("O nÃºmero %d em binÃ¡rio = %d%d%d%d%d%d ", n, resultado%2, bit2, bit4, bit8, bit16, bit32, bit64 );
 	**/
 	
 	int x1, x2, y1, y2;
