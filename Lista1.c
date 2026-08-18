@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[]) {
 	
-	
+	// Exercicio 3 //
 	int n, resultado, bit64, bit32, bit16, bit8, bit4, bit2;
 	
 	printf("Entre com o valor de N: ");
@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
 	
 	printf("O número %d em binário = %d%d%d%d%d%d ", n, resultado%2, bit2, bit4, bit8, bit16, bit32, bit64 );
 	
-	
+	// Exercicio 8 //
 	int x1, x2, y1, y2;
 	float dist;
 	
