@@ -43,9 +43,7 @@ int main(int argc, char *argv[]){
 	return 0;
 }
 
-// ===================== EXERCICIO 2 =====================
-// Le uma velocidade em km/h e converte para m/s
-// Formula: M = K / 3.6 (fator de conversao padrao entre as duas unidades)
+// EXERCICIO 2 
 void exercicio2(void)
 {
     double velocidadeKmH, velocidadeMs;
@@ -59,8 +57,7 @@ void exercicio2(void)
     printf("Velocidade em m/s: %.2f\n\n", velocidadeMs);
 }
  
-// ===================== EXERCICIO 3 =====================
-// Le um valor em reais e a cotacao do dolar, e imprime o valor em dolares
+// EXERCICIO 3 
 void exercicio3(void)
 {
     double valorReais, cotacaoDolar, valorDolares;
@@ -72,15 +69,12 @@ void exercicio3(void)
     printf("Digite a cotacao do dolar: ");
     scanf("%lf", &cotacaoDolar);
  
-    // Quantos dolares "cabem" dentro do valor em reais, na cotacao informada
     valorDolares = valorReais / cotacaoDolar;
  
     printf("Valor em dolares: %.2f\n\n", valorDolares);
 }
  
-// ===================== EXERCICIO 4 =====================
-// Le uma temperatura em graus Celsius e converte para Fahrenheit
-// Formula: F = C * (9.0/5.0) + 32.0
+// EXERCICIO 4 
 void exercicio4(void)
 {
     double celsius, fahrenheit;
@@ -94,9 +88,7 @@ void exercicio4(void)
     printf("Temperatura em Fahrenheit: %.2f\n\n", fahrenheit);
 }
  
-// ===================== EXERCICIO 5 =====================
-// Le um angulo em graus e converte para radianos
-// Formula: R = G * PI / 180, com PI = 3.141592
+// EXERCICIO 5 
 void exercicio5(void)
 {
     const double PI = 3.141592;
@@ -111,18 +103,14 @@ void exercicio5(void)
     printf("Angulo em radianos: %.6f\n\n", radianos);
 }
  
-// ===================== EXERCICIO 7 (Premio) =====================
-// Divide um premio fixo de R$780.000,00 entre 3 ganhadores:
-// o primeiro recebe 46%, o segundo 32%, e o terceiro fica com o restante (22%)
-// Obs: o valor total ja e conhecido no enunciado, entao nao ha leitura de dados aqui
+// EXERCICIO 7
 void exercicio7(void)
 {
     const double PREMIO_TOTAL = 780000.00;
  
     double primeiroGanhador = PREMIO_TOTAL * 0.46;
     double segundoGanhador = PREMIO_TOTAL * 0.32;
-    // O terceiro ganhador fica com o que sobrar dos outros dois (garante que
-    // a soma bate exatamente com o total, mesmo com eventuais arredondamentos)
+   
     double terceiroGanhador = PREMIO_TOTAL - primeiroGanhador - segundoGanhador;
  
     printf("===== Exercicio 7 (Premio) =====\n");
@@ -131,8 +119,7 @@ void exercicio7(void)
     printf("Terceiro ganhador: R$ %.2f\n\n", terceiroGanhador);
 }
  
-// ===================== EXERCICIO 8 (URI 1019) =====================
-// Le a duracao de um evento em segundos e converte para horas:minutos:segundos
+// EXERCICIO 8 
 void exercicio8(void)
 {
     int segundosTotais, horas, minutos, segundos, resto;
@@ -141,25 +128,18 @@ void exercicio8(void)
     printf("Digite a duracao em segundos: ");
     scanf("%d", &segundosTotais);
  
-    // Quantas horas "inteiras" cabem no total de segundos
     horas = segundosTotais / 3600;
  
-    // Segundos restantes depois de tirar as horas completas
     resto = segundosTotais % 3600;
- 
-    // Quantos minutos "inteiros" cabem no que sobrou
+
     minutos = resto / 60;
  
-    // O que sobra depois dos minutos completos vira os segundos finais
     segundos = resto % 60;
  
     printf("%d:%d:%d\n\n", horas, minutos, segundos);
 }
  
-// ===================== EXERCICIO 9 (URI 1017) =====================
-// Calcula quantos litros de combustivel sao gastos numa viagem, sabendo que
-// o carro faz 12 km por litro. Recebe o tempo (em horas) e a velocidade
-// media (em km/h) para calcular a distancia percorrida e, entao, os litros
+// EXERCICIO 9 
 void exercicio9(void)
 {
     const double KM_POR_LITRO = 12.0;
@@ -172,10 +152,8 @@ void exercicio9(void)
     printf("Digite a velocidade media (em km/h): ");
     scanf("%lf", &velocidadeMedia);
  
-    // Distancia = tempo * velocidade (formula basica de MRU)
     distancia = tempoHoras * velocidadeMedia;
  
-    // Litros necessarios = distancia percorrida dividida pelo rendimento do carro
     litros = distancia / KM_POR_LITRO;
  
     printf("Litros necessarios: %.3f\n\n", litros);
