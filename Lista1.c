@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[]) {
 
-// ===================== EXERCICIO 1 =====================
+//  EXERCICIO 1 
 void exercicio1(void)
 {
     int primeiro, segundo;
@@ -19,7 +19,7 @@ void exercicio1(void)
     printf("Ordem inversa: %d %d\n\n", segundo, primeiro);
 }
 
-// ===================== EXERCICIO 2 =====================
+// EXERCICIO 2
 void exercicio2(void)
 {
     double valor, mantissa;
@@ -46,7 +46,7 @@ void exercicio2(void)
     printf("Notacao cientifica: %.2f x 10^%d\n\n", mantissa, expoente);
 }
 
-// ===================== EXERCICIO 5 =====================
+//  EXERCICIO 5 
 void exercicio5(void)
 {
     double v1, v2, v3, v4;
